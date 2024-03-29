@@ -1,3 +1,8 @@
+variable "region" {
+  description = "Name of the region that is required"
+  type = string
+  default = "us-east-1"
+}
 variable "subnet_id" {
   description = "Subnet ID within the VPC"
   # default     = "subnet-0b455b136100c5753"
