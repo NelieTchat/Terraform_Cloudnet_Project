@@ -2,8 +2,9 @@
 *.tfstate
 *.tfstate.*
 
-# Ignore .terraform directory
-.terraform/
+# Local .terraform directories
+**/.terraform/*
+.terraform
 
 # Ignore Terraform lock file
 terraform.lock.hcl
@@ -13,3 +14,10 @@ jenkins_ec2/.terraform/providers/registry.terraform.io/hashicorp/aws/5.43.0/darw
 
 # Ignnore terraform.tfvars
 terraform.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
